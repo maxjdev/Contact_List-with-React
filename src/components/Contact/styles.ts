@@ -5,6 +5,7 @@ export const Card = styled.div`
   padding: 12px;
   background-color: #bdbdbd;
   border-radius: 10px;
+  margin-bottom: 26px;
 
   button {
     padding: 12px;
@@ -47,6 +48,17 @@ export const RemoveButton = styled.button`
 
   &:hover {
     background-color: #ff0000;
+    transform: scale(1.05);
+  }
+`
+
+export const SaveButton = styled.button`
+  background-color: green;
+  transition: transform 0.2s ease-in-out;
+  font-weight: bold;
+
+  &:hover {
+    background-color: green;
     transform: scale(1.05);
   }
 `
