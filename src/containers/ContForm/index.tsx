@@ -1,5 +1,5 @@
 import { Main } from '../ContactList/styles'
-import { CForm, H2 } from './styles'
+import { CForm, H2, RegisterButton } from './styles'
 
 const ContForm = () => (
   <Main>
@@ -17,7 +17,7 @@ const ContForm = () => (
         Tel:
         <input type="tel" name="" id="" placeholder="00 00000-0000" />
       </label>
-      <button>Register</button>
+      <RegisterButton>Register</RegisterButton>
     </CForm>
   </Main>
 )

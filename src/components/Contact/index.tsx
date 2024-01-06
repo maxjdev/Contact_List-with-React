@@ -1,4 +1,4 @@
-import { Card } from './styles'
+import { Card, ActionBar, EditButton, RemoveButton } from './styles'
 
 const Contact = () => (
   <Card>
@@ -30,10 +30,10 @@ const Contact = () => (
       <p>Tel-999</p>
     </div>
 
-    <div>
-      <button>Edit</button>
-      <button>Remove</button>
-    </div>
+    <ActionBar>
+      <EditButton>Edit</EditButton>
+      <RemoveButton>Remove</RemoveButton>
+    </ActionBar>
   </Card>
 )
 

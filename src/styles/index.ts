@@ -1,5 +1,4 @@
 import styled, { createGlobalStyle } from 'styled-components'
-import vars from './vars'
 
 const GlobalStyle = createGlobalStyle`
   *{
