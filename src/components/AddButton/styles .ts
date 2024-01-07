@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
+import vars from '../../styles/vars'
 
 export const Button = styled(Link)`
   position: fixed;
@@ -11,8 +12,8 @@ export const Button = styled(Link)`
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  background-color: #303952;
-  color: #fff;
+  background-color: ${vars.darkGray};
+  color: ${vars.white};
   font-weight: bold;
   font-size: 1.8em;
   transition: transform 0.2s ease-in-out;

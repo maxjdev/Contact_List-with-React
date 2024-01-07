@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import vars from '../../styles/vars'
 
 export const Head = styled.header`
   width: 100%;
@@ -6,7 +7,7 @@ export const Head = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #bdbdbd;
+  background-color: ${vars.gray};
   color: #333;
 
   img {
