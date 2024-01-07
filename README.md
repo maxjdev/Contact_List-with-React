@@ -2,12 +2,12 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="90px">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" width="90px">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" width="90px"><br><br>
-  <h1>Project: Task List <a href="https://ebac-front-task-list.vercel.app/">Deploy</a></h1>
+  <h1>Project: Contact List</h1>
 </div>
 
 ## Description
 
-The Task List project is a task management application built with TypeScript, React, Redux, and React Router DOM. It offers features such as task creation and removal, priority settings, and advanced filters. Users can categorize tasks with different priorities, filter by status or priority, and perform searches by task name. With a well-structured architecture using Redux for state management, the application provides an intuitive and flexible experience for efficient task management.
+Explored the power of React and Redux in contact management with reducers to: add, remove and edit with ease, driven by React Router for efficient page navigation. Styled with Styled Components, and standardized code with ESLint and Prettier.
 
 ## Starting Project
 
