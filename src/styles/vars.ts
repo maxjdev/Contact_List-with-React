@@ -1,7 +1,10 @@
 export default {
-  red: '#c23616',
-  green: '#44bd32',
-  yellow: '#f0c11a',
-  yellow2: '#e1a32a',
-  darkBlue: '#2f3640'
+  white: '#fff',
+  green: '#32cd32',
+  greenHover: '#00ff00',
+  gray: '#bdbdbd',
+  gray2: '#ccc',
+  darkGray: '#303952',
+  redOrange: '#ff4500',
+  redHover: 'ff0000'
 }

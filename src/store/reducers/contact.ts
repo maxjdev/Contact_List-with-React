@@ -8,19 +8,29 @@ type ContactState = {
 const initialState: ContactState = {
   itens: [
     {
-      name: 'Ze da Manga0',
-      email: 'zedamanga0@gmail.com',
+      name: 'Name',
+      email: 'name.sobrename@gmail.com',
       tel: '0'
     },
     {
-      name: 'Ze da Manga1',
-      email: 'zedamanga1@gmail.com',
+      name: 'Name',
+      email: 'name.sobrename@gmail.com',
       tel: '1'
     },
     {
-      name: 'Ze da Manga2',
-      email: 'zedamanga2@gmail.com',
+      name: 'Name',
+      email: 'name.sobrename@gmail.com',
       tel: '2'
+    },
+    {
+      name: 'Name',
+      email: 'name.sobrename@gmail.com',
+      tel: '3'
+    },
+    {
+      name: 'Name',
+      email: 'name.sobrename@gmail.com',
+      tel: '4'
     }
   ]
 }
@@ -33,9 +43,23 @@ const contactSlice = createSlice({
       state.itens = state.itens.filter(
         (contact) => contact.tel !== action.payload
       )
+    },
+    edit: (
+      state,
+      action: PayloadAction<{ tel: string; updatedContact: Contact }>
+    ) => {
+      const index = state.itens.findIndex(
+        (contact) => contact.tel === action.payload.tel
+      )
+      if (index !== -1) {
+        state.itens[index] = action.payload.updatedContact
+      }
+    },
+    add: (state, action: PayloadAction<Contact>) => {
+      state.itens.push(action.payload)
     }
   }
 })
 
-export const { remove } = contactSlice.actions
+export const { remove, edit, add } = contactSlice.actions
 export default contactSlice.reducer

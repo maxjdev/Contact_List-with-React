@@ -1,9 +1,10 @@
 import styled from 'styled-components'
+import vars from '../../styles/vars'
 
 export const Card = styled.div`
   display: block;
   padding: 12px;
-  background-color: #bdbdbd;
+  background-color: ${vars.gray};
   border-radius: 10px;
   margin-bottom: 26px;
 
@@ -31,34 +32,34 @@ export const ActionBar = styled.div`
 `
 
 export const EditButton = styled.button`
-  background-color: #fff;
+  background-color: ${vars.white};
   transition: transform 0.2s ease-in-out;
   font-weight: bold;
 
   &:hover {
-    background-color: #ccc;
+    background-color: ${vars.gray2};
     transform: scale(1.05);
   }
 `
 
 export const RemoveButton = styled.button`
-  background-color: #ff4500;
+  background-color: ${vars.redOrange};
   transition: transform 0.2s ease-in-out;
   font-weight: bold;
 
   &:hover {
-    background-color: #ff0000;
+    background-color: ${vars.redHover};
     transform: scale(1.05);
   }
 `
 
 export const SaveButton = styled.button`
-  background-color: green;
+  background-color: ${vars.green};
   transition: transform 0.2s ease-in-out;
   font-weight: bold;
 
   &:hover {
-    background-color: green;
+    background-color: ${vars.greenHover};
     transform: scale(1.05);
   }
 `
